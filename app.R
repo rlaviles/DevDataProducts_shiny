@@ -1,3 +1,4 @@
+library(shiny)
 library(RCurl)
 library(Hmisc)
 library(leaflet)
@@ -32,4 +33,3 @@ shinyApp(
                                 htmlEscape(depth))) %>% html_print
     myMap <- renderLeaflet(map)
   })
-
